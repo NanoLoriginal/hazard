@@ -26,7 +26,9 @@ class marcher extends Phaser.Scene {
 
         //player.setBounce(0.2);// REBONDISSEMENT DU PERSONNAGE LORSQU'IL SAUTE
         player.setCollideWorldBounds(true);//COLLISION AVEC TOUS LES OBJETS DU JEU
+
 //CREATION DES ANIMATIONS DU PERSONNAGE GRACE AU SPRITESHEET
+
         this.anims.create({
             key: 'left',
             frames: this.anims.generateFrameNumbers('dude', { start: 0, end: 3 }),//CE SONT LES IMAGES 0/1/2/3 QUI SONT JOUEES
@@ -92,12 +94,12 @@ class marcher extends Phaser.Scene {
                 case Phaser.Input.Keyboard.KeyCodes.RIGHT:
                     player.setVelocityX(0);//LE PERSO NE BOUGE PAS
 
-                    player.anims.play('turn');//ET ON JOUE L'ANIMATION TUR CREE DANS LA FONCTION CREATE
+                    player.anims.play('turn');//ET ON JOUE L'ANIMATION TURn CREE DANS LA FONCTION CREATE
                     break;
                 case Phaser.Input.Keyboard.KeyCodes.LEFT:
                     player.setVelocityX(0);//LE PERSO NE BOUGE PAS
 
-                    player.anims.play('turn');//ET ON JOUE L'ANIMATION TUR CREE DANS LA FONCTION CREATE
+                    player.anims.play('turn');//ET ON JOUE L'ANIMATION TURn CREE DANS LA FONCTION CREATE
 
                     break;
             }
